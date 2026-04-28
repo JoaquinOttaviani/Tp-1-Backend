@@ -1,0 +1,17 @@
+{
+  "name": "tp-1",
+  "version": "1.0.0",
+  "description": "CLI de gestión de usuarios con Node y MySQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "mysql2": "^3.22.3",
+    "uuid": "^14.0.0"
+  }
+}
