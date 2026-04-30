@@ -1,6 +1,6 @@
-import { getUsers, addUser } from "./controllers.js";
-
+import { getUsers, addUser, deleteUser, updateUser } from "./controllers.js";
 const args = process.argv.slice(2);
+const id = args[1];
 const operacion = args[0];
 
 if (!operacion) {
@@ -20,6 +20,14 @@ const run = async () => {
 
     case "add":
       await addUser(username, email, password);
+      break;
+    
+      case "delete":
+      await deleteUser(id);
+      break;
+    
+      case "update":
+      await updateUser(username, email, password, args[4]);
       break;
 
     default:
